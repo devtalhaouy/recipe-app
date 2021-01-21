@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+body {
+  margin: 0;
+  background: #d3cce3;
+  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+}
+
+.container-sm {
+  width: 400px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 -1px 10px 2px #3333331a;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+header input {
+  background-color: #eee;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+header button {
+  background-color: transparent;
+  color: #aaa;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.fav-container {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(238, 188, 238);
+}
+.fav-container h3 {
+  font-size: 1.5rem;
+  color: rgb(204, 76, 204);
+}
+.fav-meals {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.fav-meals li {
+  position: relative;
+  width: 75px;
+  margin: 5px;
+}
+.fav-meals li .clear {
+  background-color: transparent;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  opacity: 0;
+}
+.fav-meals li:hover .clear{
+  opacity: 1;
+  cursor: pointer;
+}
+.fav-meals li img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff1a;
+  box-shadow: 0 -1px 10px 2px#3333331a;
+}
+.fav-meals li span {
+  display: inline-block;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75px;
+
+}
+
+.meal {
+  border-radius: 3px;
+  box-shadow: 0 -1px 10px 2px #3333331a;
+  margin: 1.5rem;
+}
+.meal-header {
+  position: relative;
+}
+.meal-header .random {
+  position: absolute;
+  top: 1rem;
+  background-color: #fff;
+  padding: 0.25rem 1rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.meal-header img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.meal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.meal-body h4 {
+  margin: 0;
+}
+.meal-body .fav-btn {
+  background-color: transparent;
+  color: rgb(187, 180, 180);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.meal-body .fav-btn.active {
+  color: crimson;
+}
